@@ -28,7 +28,7 @@ public class ListController {
 		
 		mv.addObject("list",noticeList);
 		mv.setViewName("notice.list");
-		
+		 
 		return mv;
 	}
 	
