@@ -23,7 +23,6 @@ public class ListController {
 	@RequestMapping("/list")
 	public ModelAndView list(@RequestParam(name="page",defaultValue = "10", required=true) String p) {
 		
-		System.out.println ( "p:"+ p );
 		ModelAndView mv = new ModelAndView();
 		List<Notice> noticeList = noticeService.getList();
 		
