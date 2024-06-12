@@ -53,5 +53,16 @@ public class ListController {
 		return result;
 	}
 
-
+	@RequestMapping("jsonlist")
+	public ModelAndView list() {
+		System.out.println ( " json list Controller start!");
+		
+		ModelAndView mv = new ModelAndView();
+		List<Notice> list = noticeService.getList();
+		
+		mv.addObject("list",list);
+		mv.setViewName("jsonlist");
+		
+		return mv;
+	}
 }

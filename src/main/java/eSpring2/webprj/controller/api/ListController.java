@@ -23,4 +23,5 @@ public class ListController {
 		List<Notice> list = noticeService.getList();
 		return list;
 	}
+	
 }
